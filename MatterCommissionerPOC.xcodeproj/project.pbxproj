@@ -7,21 +7,59 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB91F4C129028C2A007AB6B0 /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB91F4C029028C2A007AB6B0 /* RequestHandler.swift */; };
+		CB91F4C529028C2A007AB6B0 /* MatterExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CB91F4BE29028C2A007AB6B0 /* MatterExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CBC72CB528CF6C41002C61DD /* MatterCommissionerPOCApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC72CB428CF6C41002C61DD /* MatterCommissionerPOCApp.swift */; };
 		CBC72CB728CF6C41002C61DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC72CB628CF6C41002C61DD /* ContentView.swift */; };
 		CBC72CB928CF6C42002C61DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBC72CB828CF6C42002C61DD /* Assets.xcassets */; };
 		CBC72CBC28CF6C42002C61DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBC72CBB28CF6C42002C61DD /* Preview Assets.xcassets */; };
+		CBC72CC728D05B7C002C61DD /* Matter.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = CBC72CC628D05B7C002C61DD /* Matter.entitlements */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CB91F4C329028C2A007AB6B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBC72CA928CF6C41002C61DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB91F4BD29028C2A007AB6B0;
+			remoteInfo = MatterExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CB91F4C629028C2A007AB6B0 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CB91F4C529028C2A007AB6B0 /* MatterExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		CB91F4BE29028C2A007AB6B0 /* MatterExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MatterExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB91F4C029028C2A007AB6B0 /* RequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
+		CB91F4C229028C2A007AB6B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBC72CB128CF6C41002C61DD /* MatterCommissionerPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatterCommissionerPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBC72CB428CF6C41002C61DD /* MatterCommissionerPOCApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatterCommissionerPOCApp.swift; sourceTree = "<group>"; };
 		CBC72CB628CF6C41002C61DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CBC72CB828CF6C42002C61DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBC72CBB28CF6C42002C61DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CBC72CC628D05B7C002C61DD /* Matter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Matter.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CB91F4BB29028C2A007AB6B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CBC72CAE28CF6C41002C61DD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -32,10 +70,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB91F4BF29028C2A007AB6B0 /* MatterExtension */ = {
+			isa = PBXGroup;
+			children = (
+				CB91F4C029028C2A007AB6B0 /* RequestHandler.swift */,
+				CB91F4C229028C2A007AB6B0 /* Info.plist */,
+			);
+			path = MatterExtension;
+			sourceTree = "<group>";
+		};
 		CBC72CA828CF6C41002C61DD = {
 			isa = PBXGroup;
 			children = (
 				CBC72CB328CF6C41002C61DD /* MatterCommissionerPOC */,
+				CB91F4BF29028C2A007AB6B0 /* MatterExtension */,
 				CBC72CB228CF6C41002C61DD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				CBC72CB128CF6C41002C61DD /* MatterCommissionerPOC.app */,
+				CB91F4BE29028C2A007AB6B0 /* MatterExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,6 +100,7 @@
 		CBC72CB328CF6C41002C61DD /* MatterCommissionerPOC */ = {
 			isa = PBXGroup;
 			children = (
+				CBC72CC628D05B7C002C61DD /* Matter.entitlements */,
 				CBC72CB428CF6C41002C61DD /* MatterCommissionerPOCApp.swift */,
 				CBC72CB628CF6C41002C61DD /* ContentView.swift */,
 				CBC72CB828CF6C42002C61DD /* Assets.xcassets */,
@@ -70,6 +120,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CB91F4BD29028C2A007AB6B0 /* MatterExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB91F4C929028C2A007AB6B0 /* Build configuration list for PBXNativeTarget "MatterExtension" */;
+			buildPhases = (
+				CB91F4BA29028C2A007AB6B0 /* Sources */,
+				CB91F4BB29028C2A007AB6B0 /* Frameworks */,
+				CB91F4BC29028C2A007AB6B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MatterExtension;
+			productName = MatterExtension;
+			productReference = CB91F4BE29028C2A007AB6B0 /* MatterExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		CBC72CB028CF6C41002C61DD /* MatterCommissionerPOC */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CBC72CBF28CF6C42002C61DD /* Build configuration list for PBXNativeTarget "MatterCommissionerPOC" */;
@@ -77,10 +144,12 @@
 				CBC72CAD28CF6C41002C61DD /* Sources */,
 				CBC72CAE28CF6C41002C61DD /* Frameworks */,
 				CBC72CAF28CF6C41002C61DD /* Resources */,
+				CB91F4C629028C2A007AB6B0 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CB91F4C429028C2A007AB6B0 /* PBXTargetDependency */,
 			);
 			name = MatterCommissionerPOC;
 			productName = MatterCommissionerPOC;
@@ -94,11 +163,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1400;
+				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					CB91F4BD29028C2A007AB6B0 = {
+						CreatedOnToolsVersion = 14.1;
+					};
 					CBC72CB028CF6C41002C61DD = {
 						CreatedOnToolsVersion = 14.0;
+						LastSwiftMigration = 1400;
 					};
 				};
 			};
@@ -116,23 +189,40 @@
 			projectRoot = "";
 			targets = (
 				CBC72CB028CF6C41002C61DD /* MatterCommissionerPOC */,
+				CB91F4BD29028C2A007AB6B0 /* MatterExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CB91F4BC29028C2A007AB6B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CBC72CAF28CF6C41002C61DD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CBC72CBC28CF6C42002C61DD /* Preview Assets.xcassets in Resources */,
 				CBC72CB928CF6C42002C61DD /* Assets.xcassets in Resources */,
+				CBC72CC728D05B7C002C61DD /* Matter.entitlements in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CB91F4BA29028C2A007AB6B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB91F4C129028C2A007AB6B0 /* RequestHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CBC72CAD28CF6C41002C61DD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -144,7 +234,67 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		CB91F4C429028C2A007AB6B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB91F4BD29028C2A007AB6B0 /* MatterExtension */;
+			targetProxy = CB91F4C329028C2A007AB6B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		CB91F4C729028C2A007AB6B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JD8PYQD29S;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MatterExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MatterExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.telekom.MatterCommissionerPOC.MatterExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB91F4C829028C2A007AB6B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JD8PYQD29S;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MatterExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MatterExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.telekom.MatterCommissionerPOC.MatterExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		CBC72CBD28CF6C42002C61DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -262,8 +412,11 @@
 		CBC72CC028CF6C42002C61DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MatterCommissionerPOC/Matter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MatterCommissionerPOC/Preview Content\"";
@@ -275,14 +428,16 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = de.telekom.MatterCommissionerPOC.MatterCommissionerPOC;
+				PRODUCT_BUNDLE_IDENTIFIER = de.telekom.MatterCommissionerPOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -291,8 +446,11 @@
 		CBC72CC128CF6C42002C61DD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MatterCommissionerPOC/Matter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MatterCommissionerPOC/Preview Content\"";
@@ -304,12 +462,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = de.telekom.MatterCommissionerPOC.MatterCommissionerPOC;
+				PRODUCT_BUNDLE_IDENTIFIER = de.telekom.MatterCommissionerPOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -320,6 +479,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CB91F4C929028C2A007AB6B0 /* Build configuration list for PBXNativeTarget "MatterExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB91F4C729028C2A007AB6B0 /* Debug */,
+				CB91F4C829028C2A007AB6B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CBC72CAC28CF6C41002C61DD /* Build configuration list for PBXProject "MatterCommissionerPOC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

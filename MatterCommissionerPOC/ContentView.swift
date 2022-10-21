@@ -6,17 +6,58 @@
 //
 
 import SwiftUI
+import HomeKit
+import Matter
+import MatterSupport
+
+// Prerequisites
+
+// https://download.developer.apple.com/iOS/iOS_Logs/EnableMatter_Instructions.pdf
+
+// https://developer.apple.com/documentation/homekit/hmaccessorysetupmanager/3920433-performmatterecosystemaccessorys
+
+// https://github.com/SiliconLabs/matter/blob/release_0.2.0/docs/guides/simulated_device_linux.md
+
+// https://github.com/project-chip/connectedhomeip/blob/master/docs/guides/darwin.md#profile-installation
 
 struct ContentView: View {
+    
+    @State private var showingAlert = false
+    @State private var error: Error?
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Button("Perform Matter Request") {
+                Task {
+                    await performMatterRequest()
+                }
+            }
         }
         .padding()
+        .alert("Error Performing Request", isPresented: $showingAlert) {
+            VStack {
+                if let description = error?.localizedDescription {
+                    Text ("\(description)")
+                }
+                Button("OK", role: .cancel) { }
+            }
+        }
     }
+    
+    func performMatterRequest(
+        ecosystemName: String = "Zuhause Ecosystem",
+        homeName: String = "Magenta Zuhause") async {
+            
+            let magentaHome = MatterAddDeviceRequest.Home(displayName: homeName)
+            let topology = MatterAddDeviceRequest.Topology(
+                ecosystemName: ecosystemName,
+                homes: [magentaHome])
+            let request = MatterAddDeviceRequest(topology: topology)
+            do {
+                try await request.perform()
+            } catch {
+                self.error = error
+            }
+        }
 }
 
 struct ContentView_Previews: PreviewProvider {
@@ -24,3 +65,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
