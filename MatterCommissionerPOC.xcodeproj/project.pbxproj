@@ -13,7 +13,6 @@
 		CBC72CB728CF6C41002C61DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC72CB628CF6C41002C61DD /* ContentView.swift */; };
 		CBC72CB928CF6C42002C61DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBC72CB828CF6C42002C61DD /* Assets.xcassets */; };
 		CBC72CBC28CF6C42002C61DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBC72CBB28CF6C42002C61DD /* Preview Assets.xcassets */; };
-		CBC72CC728D05B7C002C61DD /* Matter.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = CBC72CC628D05B7C002C61DD /* Matter.entitlements */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -208,7 +207,6 @@
 			files = (
 				CBC72CBC28CF6C42002C61DD /* Preview Assets.xcassets in Resources */,
 				CBC72CB928CF6C42002C61DD /* Assets.xcassets in Resources */,
-				CBC72CC728D05B7C002C61DD /* Matter.entitlements in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

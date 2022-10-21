@@ -33,14 +33,15 @@ struct ContentView: View {
             }
         }
         .padding()
-        .alert("Error Performing Request", isPresented: $showingAlert) {
-            VStack {
-                if let description = error?.localizedDescription {
-                    Text ("\(description)")
-                }
-                Button("OK", role: .cancel) { }
+        .alert("Error Performing Request",
+               isPresented: $showingAlert,
+               actions: {},
+               message: {
+            if let description = String(describing: self.error) {
+                Text(description)
             }
         }
+        )
     }
     
     func performMatterRequest(
@@ -56,6 +57,7 @@ struct ContentView: View {
                 try await request.perform()
             } catch {
                 self.error = error
+                showingAlert = true
             }
         }
 }
