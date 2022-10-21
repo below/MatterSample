@@ -45,8 +45,8 @@ struct ContentView: View {
     }
     
     func performMatterRequest(
-        ecosystemName: String = "Zuhause Ecosystem",
-        homeName: String = "Magenta Zuhause") async {
+        ecosystemName: String = "My Ecosystem",
+        homeName: String = "My Home") async {
             
             let magentaHome = MatterAddDeviceRequest.Home(displayName: homeName)
             let topology = MatterAddDeviceRequest.Topology(

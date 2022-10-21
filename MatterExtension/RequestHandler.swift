@@ -27,7 +27,7 @@ class RequestHandler: MatterAddDeviceExtensionRequestHandler {
     }
 
     override func commissionDevice(in home: MatterAddDeviceRequest.Home?, onboardingPayload: String, commissioningID: UUID) async throws {
-        // Use this function to commission the device with your Matter stack.
+        debugPrint("onboardingPayload: \(onboardingPayload), commissioningID: \(commissioningID)")
     }
 
     override func rooms(in home: MatterAddDeviceRequest.Home?) async -> [MatterAddDeviceRequest.Room] {

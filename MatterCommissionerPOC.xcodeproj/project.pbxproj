@@ -43,6 +43,7 @@
 		CB91F4BE29028C2A007AB6B0 /* MatterExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MatterExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB91F4C029028C2A007AB6B0 /* RequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
 		CB91F4C229028C2A007AB6B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB91F4CA29029EB5007AB6B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		CBC72CB128CF6C41002C61DD /* MatterCommissionerPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatterCommissionerPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBC72CB428CF6C41002C61DD /* MatterCommissionerPOCApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatterCommissionerPOCApp.swift; sourceTree = "<group>"; };
 		CBC72CB628CF6C41002C61DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,6 +100,7 @@
 		CBC72CB328CF6C41002C61DD /* MatterCommissionerPOC */ = {
 			isa = PBXGroup;
 			children = (
+				CB91F4CA29029EB5007AB6B0 /* Info.plist */,
 				CBC72CC628D05B7C002C61DD /* Matter.entitlements */,
 				CBC72CB428CF6C41002C61DD /* MatterCommissionerPOCApp.swift */,
 				CBC72CB628CF6C41002C61DD /* ContentView.swift */,
@@ -421,6 +423,7 @@
 				DEVELOPMENT_TEAM = JD8PYQD29S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MatterCommissionerPOC/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -455,6 +458,7 @@
 				DEVELOPMENT_TEAM = JD8PYQD29S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MatterCommissionerPOC/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

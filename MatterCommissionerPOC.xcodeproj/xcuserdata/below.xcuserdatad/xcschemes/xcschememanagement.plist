@@ -7,12 +7,25 @@
 		<key>MatterCommissionerPOC.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<key>MatterExtension.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>CB91F4BD29028C2A007AB6B0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CBC72CB028CF6C41002C61DD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
